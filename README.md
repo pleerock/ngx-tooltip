@@ -9,20 +9,20 @@ If you want to use it without bootstrap - simply create proper css classes. Plea
 
 1. Install npm module:
 
-`npm install ng2-tooltip --save`
+    `npm install ng2-tooltip --save`
 
 2. If you are using system.js you may want to add this into `map` and `package` config:
 
-```json
-{
-    "map": {
-        "ng2-tooltip": "node_modules/ng2-tooltip"
-    },
-    "packages": {
-        "ng2-tooltip": { "main": "index.js", "defaultExtension": "js" }
+    ```json
+    {
+        "map": {
+            "ng2-tooltip": "node_modules/ng2-tooltip"
+        },
+        "packages": {
+            "ng2-tooltip": { "main": "index.js", "defaultExtension": "js" }
+        }
     }
-}
-```
+    ```
 
 ## Usage
 
