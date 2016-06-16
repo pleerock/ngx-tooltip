@@ -3,6 +3,8 @@
 Simple tooltip control for your angular2 applications using bootstrap3. Does not depend of jquery.
 If you want to use it without bootstrap - simply create proper css classes.
 
+![angular 2 tooltip](https://raw.githubusercontent.com/pleerock/ng2-tooltip/master/resources/tooltip-example.png)
+
 ## Installation
 
 1. Install npm module:
