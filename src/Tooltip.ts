@@ -1,4 +1,7 @@
-import {Directive, HostListener, ComponentRef, ViewContainerRef, ComponentResolver, ComponentFactory, Input} from "@angular/core";
+import {
+    Directive, HostListener, ComponentRef, ViewContainerRef, Input, ComponentFactoryResolver,
+    ComponentFactory
+} from "@angular/core";
 import {TooltipContent} from "./TooltipContent";
 
 @Directive({
@@ -17,7 +20,8 @@ export class Tooltip {
     // Constructor
     // -------------------------------------------------------------------------
 
-    constructor(private viewContainerRef: ViewContainerRef, private resolver: ComponentResolver) {
+    constructor(private viewContainerRef: ViewContainerRef,
+                private resolver: ComponentFactoryResolver) {
     }
 
     // -------------------------------------------------------------------------
@@ -48,16 +52,15 @@ export class Tooltip {
 
         this.visible = true;
         if (typeof this.content === "string") {
-            this.resolver.resolveComponent(TooltipContent).then((factory: ComponentFactory<any>) => {
-                if (!this.visible)
-                    return;
+            const factory = this.resolver.resolveComponentFactory(TooltipContent);
+            if (!this.visible)
+                return;
 
-                this.tooltip = this.viewContainerRef.createComponent(factory);
-                this.tooltip.instance.hostElement = this.viewContainerRef.element.nativeElement;
-                this.tooltip.instance.content = this.content as string;
-                this.tooltip.instance.placement = this.tooltipPlacement;
-                this.tooltip.instance.animation = this.tooltipAnimation;
-            });
+            this.tooltip = this.viewContainerRef.createComponent(factory);
+            this.tooltip.instance.hostElement = this.viewContainerRef.element.nativeElement;
+            this.tooltip.instance.content = this.content as string;
+            this.tooltip.instance.placement = this.tooltipPlacement;
+            this.tooltip.instance.animation = this.tooltipAnimation;
         } else {
             const tooltip = this.content as TooltipContent;
             tooltip.hostElement = this.viewContainerRef.element.nativeElement;

@@ -1,6 +1,7 @@
-import {bootstrap} from "@angular/platform-browser-dynamic";
-import {Component} from "@angular/core";
-import {TOOLTIP_DIRECTIVES} from "../../src/index";
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+import {Component, NgModule} from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {TooltipModule} from "../../src/index";
 
 @Component({
     selector: "app",
@@ -26,11 +27,27 @@ import {TOOLTIP_DIRECTIVES} from "../../src/index";
     </div>
     
 </div>
-`,
-    directives: [TOOLTIP_DIRECTIVES]
+`
 })
 export class Sample1App {
 
 }
 
-bootstrap(Sample1App);
+
+@NgModule({
+    imports: [
+        BrowserModule,
+        TooltipModule
+    ],
+    declarations: [
+        Sample1App
+    ],
+    bootstrap: [
+        Sample1App
+    ]
+})
+export class Sample1Module {
+
+}
+
+platformBrowserDynamic().bootstrapModule(Sample1Module);

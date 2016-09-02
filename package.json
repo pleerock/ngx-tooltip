@@ -1,6 +1,6 @@
 {
   "name": "ng2-tooltip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple tooltip control for your angular2 applications using bootstrap3.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -23,14 +23,14 @@
     "angular2-tooltip"
   ],
   "peerDependencies": {
-    "@angular/core": "^2.0.0-rc.1"
+    "@angular/core": "^2.0.0-rc.6"
   },
   "devDependencies": {
-    "@angular/core": "^2.0.0-rc.2",
-    "@angular/common": "^2.0.0-rc.2",
-    "@angular/compiler": "^2.0.0-rc.2",
-    "@angular/platform-browser": "^2.0.0-rc.2",
-    "@angular/platform-browser-dynamic": "^2.0.0-rc.2",
+    "@angular/core": "^2.0.0-rc.6",
+    "@angular/common": "^2.0.0-rc.6",
+    "@angular/compiler": "^2.0.0-rc.6",
+    "@angular/platform-browser": "^2.0.0-rc.6",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.6",
     "bootstrap": "^3.3.6",
     "chai": "^3.4.1",
     "del": "^2.2.0",
@@ -44,7 +44,7 @@
     "gulpclass": "^0.1.0",
     "mocha": "^2.3.2",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.6",
+    "rxjs": "5.0.0-beta.11",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "systemjs": "0.19.27",
@@ -52,6 +52,6 @@
     "tslint-stylish": "^2.1.0-beta",
     "typescript": "^1.8.2",
     "typings": "^0.6.6",
-    "zone.js": "^0.6.12"
+    "zone.js": "^0.6.17"
   }
 }
