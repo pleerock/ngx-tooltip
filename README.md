@@ -61,7 +61,7 @@ Example of usage with dynamic html content:
 
 ```typescript
 import {Component} from "@angular/core";
-import {TOOLTIP_DIRECTIVES} from "ng2-tooltip";
+import {TooltipModule} from "ng2-tooltip";
 
 @Component({
     selector: "app",
@@ -87,10 +87,25 @@ import {TOOLTIP_DIRECTIVES} from "ng2-tooltip";
     </div>
 
 </div>
-`,
-    directives: [TOOLTIP_DIRECTIVES]
+`
 })
 export class App {
+
+}
+
+@NgModule({
+    imports: [
+        // ...
+        TooltipModule
+    ],
+    declarations: [
+        App
+    ],
+    bootstrap: [
+        App
+    ]
+})
+export class AppModule {
 
 }
 ```

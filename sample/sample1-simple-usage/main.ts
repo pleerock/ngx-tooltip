@@ -33,7 +33,6 @@ export class Sample1App {
 
 }
 
-
 @NgModule({
     imports: [
         BrowserModule,
