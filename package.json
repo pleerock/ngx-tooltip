@@ -1,6 +1,6 @@
 {
   "name": "ng2-tooltip",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple tooltip control for your angular2 applications using bootstrap3.",
   "license": "MIT",
   "readmeFilename": "README.md",
