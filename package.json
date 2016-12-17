@@ -1,6 +1,6 @@
 {
   "name": "ng2-tooltip",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple tooltip control for your angular2 applications using bootstrap3.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -60,7 +60,7 @@
     "systemjs": "0.19.39",
     "tslint": "^3.15.1",
     "tslint-stylish": "^2.1.0-beta",
-    "typescript": "^2.1.4",
+    "typescript": "^2.0.10",
     "zone.js": "^0.7.2"
   }
 }
