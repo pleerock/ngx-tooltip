@@ -1,9 +1,9 @@
 # ngx-tooltip
 
-Simple tooltip control for your angular2 applications using bootstrap3. Does not depend of jquery.
-If you want to use it without bootstrap - simply create proper css classes. Please star a project if you liked it, or create an issue if you have problems with it.
+Simple tooltip control for your [Angular](https://angular.io/) applications using [Bootstrap 3](http://getbootstrap.com/). Does not depend of [jQuery](https://jquery.com/).
+If you want to use it without Bootstrap - simply create proper css classes. Please star a project if you liked it, or create an issue if you have problems with it.
 
-![angular 2 tooltip](https://raw.githubusercontent.com/pleerock/ngx-tooltip/master/resources/tooltip-example.png)
+![angular 2 tooltip](./resources/tooltip-example.png)
 
 ## Installation
 
@@ -56,6 +56,7 @@ Example of usage with dynamic html content:
 * `<tooltip-content>`:
     * `[animation]="true|false"` Indicates if all tooltip should be shown with animation or not. Default is **true**.
     * `placement="top|bottom|left|right"` Indicates where the tooltip should be placed. Default is **"bottom"**.
+    * `[backgroundColor]="hex | rgb | rgba"` Sets the tooltip's background color. You can pass a string about this color as hexadecimal, rgb or rgba, such as '#0C852B' or 'rgb(12,133,43)'".
 
 ## Sample
 
