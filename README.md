@@ -1,7 +1,7 @@
 # ngx-tooltip
 
 Simple tooltip control for your [Angular](https://angular.io/) applications using [Bootstrap 3](http://getbootstrap.com/). Does not depend of [jQuery](https://jquery.com/).
-If you want to use it without Bootstrap - simply create proper css classes. Please star a project if you liked it, or create an issue if you have problems with it.
+If you want to use it without Bootstrap - simply create proper css classes. Please star the project if you liked it or create an issue if you have problems with it.
 
 ![angular 2 tooltip](./resources/tooltip-example.png)
 
