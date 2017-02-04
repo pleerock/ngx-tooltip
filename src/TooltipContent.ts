@@ -9,8 +9,9 @@ import {Component, Input, AfterViewInit, ElementRef, ChangeDetectorRef} from "@a
      [class.in]="isIn"
      [class.fade]="isFade"
      role="tooltip">
-    <div class="tooltip-arrow"></div> 
-    <div class="tooltip-inner">
+    <div class="tooltip-arrow" [style.border-bottom-color]="backgroundColor">
+    </div> 
+    <div class="tooltip-inner" [style.background-color]="backgroundColor">
         <ng-content></ng-content>
         {{ content }}
     </div> 
@@ -34,6 +35,9 @@ export class TooltipContent implements AfterViewInit {
 
     @Input()
     animation: boolean = true;
+
+    @Input()
+    backgroundColor: string = "#000000";
 
     // -------------------------------------------------------------------------
     // Properties
